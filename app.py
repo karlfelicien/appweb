@@ -5,7 +5,7 @@ from flask import Flask,redirect,request,render_template,url_for,session
 app = Flask(__name__)
 app.secret_key = "95333b1b491083c50ff0f9478e2db06ab7a5a5018627d6834e36b4e571882a91"
 
-dico = [{"nom":"kargl","mdp":1234},{"nom":"kaco","mdp":12345},{"nom":"leon","mdp":123456}]
+dico = [{"nom":"karl","mdp":1234},{"nom":"kaco","mdp":12345},{"nom":"leon","mdp":123456}]
 
 
 
