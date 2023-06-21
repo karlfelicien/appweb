@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vive les bacheliers 2k23 !!!</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    
+</head>
+<body>
+    <h1>Felicitations aux bacheliers 2023 !!!</h1>
+
+    <form action="/bac2k23" method="post">
+
+        <p>
+            <label for="nom">----------------------- Nom et Prénoms ----------------------- </label><br>
+            <input class="i1" type="text" id="nom" name="nom">
+        </p>
+
+        <p class="p2">
+            <label for="serie">-------------------------- Série du Bac -------------------------- </label><br>
+            <input class="i2" type="text" id="serie" name="serie">
+        </p>
+
+        <p>
+            <input class="i3" type="submit" value="Cliques ici pour generer ton image ">
+        </p>
+
+
+    </form>
+
+    <div class="image">
+        <img src="{{url_for('static',filename='image/'+monimage)}}">
+
+    </div>
+
+    <footer> Le CodeurIntuitif </footer>
+
+
+</body>
+</html>
